@@ -1,0 +1,9 @@
+
+<div>
+    <p>{{feed.channel.title}}</p>
+    <ul>
+    {% for item in feed.items %}
+        <li><a href="{{item.link}}">{{item.title}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
