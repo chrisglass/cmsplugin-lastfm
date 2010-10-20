@@ -13,7 +13,7 @@ from django.core.cache import cache
 CKEY = 'cmsplugin_lastfm_'
 CTIMEOUT = 60*2# 2 minutes
 
-URL = Template('http://ws.audioscrobbler.com/2.0/user/$user/recenttracks.rss')
+URL = Template('http://ws.audioscrobbler.com/1.0/user/$user/recenttracks.rss')
 
 
 def get_feed_for_user(user):
